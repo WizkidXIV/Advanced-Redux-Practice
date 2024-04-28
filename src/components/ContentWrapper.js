@@ -21,4 +21,4 @@ function ContentWrapper() {
     )
 }
 
-export default ContentWrapper
+export default ContentWrapper,

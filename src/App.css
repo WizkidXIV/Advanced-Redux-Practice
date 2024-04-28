@@ -1,6 +1,10 @@
 body {
   margin: 0;
-  height: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
 }
 
 .App {
@@ -8,22 +12,45 @@ body {
 }
 
 .ContentWrapper {
-  min-height: 100%;
-  margin-bottom: -50px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .Footer,
 .buffer {
   height: 50px;
+  background: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #333;
 }
 
 .NavLink {
-  display: inline-block;
+  display: inline-flex;
   margin: 5px;
   padding: 5px;
   width: 10vw;
+  text-align: center;
+  background: #e0e0e0;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s;
+}
+
+.NavLink:hover {
+  background-color: #bdbdbd;
 }
 
 .Photo {
   float: right;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
